@@ -1,5 +1,67 @@
 # AngularGameProgression
 
+## Dev notes
+
+### TO DO
+
+- Set up folder structure
+- Install any remaining ng add package installations
+- Implement the layout
+
+### Docs
+
+- [Requirements](https://github.com/rangle/game-progression/blob/master/docs/requirements.md)
+- [API](https://github.com/rangle/game-progression/blob/master/docs/api.md)
+
+### Folder structure
+
+```javascript
+/app
+  /dashboard
+  /games
+    /add-game
+    /edit-game
+  /profile
+    /edit-profile
+  /ui
+    /card
+```
+
+```javascript
+stuff/
+  components/  // templates, styles, presentation logic
+    stuff/  // smart component - only one in this module
+      stuff.component.ts
+      stuff.component.html
+      stuff.component.scss
+    child1/ - dumb components
+    child2/
+    …
+    childN/
+  modules/
+    games/  // contents of the module is the exact same
+    dashboard/
+    profile/
+  services/  // api calls, etc. available to stuff and children
+    stuff.service.ts
+  store/
+    stuff.actions.ts
+    stuff.effects.ts
+    stuff.reducer.ts
+    stuff.store.ts  // high level wrapper around ngrx store, selects, action dispatches
+  types/
+    stuff-state/
+      stuff-state.functions.ts  // createStuffState()
+      stuff-state.interface.ts  // type
+    customer/
+      customer.interface.ts
+      customer.functions.ts  // business logic e.g. getCustomerFullName()
+  stuff.module.ts  // @NgModule
+  stuff-routing.module.ts  // Angular.io blog on lazy loading
+```
+
+---
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
 
 ## Development server
