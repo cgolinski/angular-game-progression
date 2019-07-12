@@ -4,7 +4,6 @@
 
 ### TO DO
 
-- Set up folder structure
 - Install any remaining ng add package installations
 - Implement the layout
 

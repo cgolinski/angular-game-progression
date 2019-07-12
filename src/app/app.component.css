@@ -1,0 +1,78 @@
+.dashboard-page {
+  background-color: lightblue;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.top-banner {
+  background-color: darkblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-banner-title {
+  color: white;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-self: center;
+  padding-left: 40px;
+  font-weight: 400;
+}
+
+.profile-wrapper {
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  width: 13%;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  height: 6rem;
+}
+
+.profile-name {
+  vertical-align: middle;
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.second-row-banner {
+  background-color: grey;
+  display: flex;
+  justify-content: flex-start;
+  height: 50px;
+}
+
+.menu-item:first-child {
+  margin-left: 20px;
+}
+
+.menu-item {
+  padding: 13px 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  align-self: center;
+}
+
+.menu-item:hover {
+  background-color: darkgrey;
+}
+
+.footer {
+  background-color: darkblue;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  align-self: flex-end;
+  width: 100vw;
+  height: 5%;
+}
