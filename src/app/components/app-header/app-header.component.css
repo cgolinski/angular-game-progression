@@ -1,19 +1,10 @@
-.dashboard-page {
-  background-color: lightblue;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  justify-content: space-between;
-}
-
-.top-banner {
+.header-title-row {
   background-color: darkblue;
   display: flex;
   justify-content: space-between;
 }
 
-.top-banner-title {
+.header-title {
   color: white;
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
@@ -22,13 +13,15 @@
   font-weight: 400;
 }
 
-.profile-wrapper {
+.my-profile-button {
   height: 7rem;
   display: flex;
   justify-content: space-between;
-  width: 13%;
+  width: 16%;
   align-items: center;
   padding: 10px 40px;
+  background-color: inherit;
+  border: none;
 }
 
 .profile-picture {
@@ -44,11 +37,17 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.second-row-banner {
+.nav-bar {
   background-color: grey;
   display: flex;
   justify-content: flex-start;
   height: 50px;
+  list-style: none;
+}
+
+.nav-bar-list {
+  list-style: none;
+  padding: 0;
 }
 
 .menu-item:first-child {
@@ -61,18 +60,10 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   align-self: center;
+  font-weight: 400;
+  display: inline-block;
 }
 
 .menu-item:hover {
   background-color: darkgrey;
-}
-
-.footer {
-  background-color: darkblue;
-  display: flex;
-  justify-content: space-between;
-  height: 20px;
-  align-self: flex-end;
-  width: 100vw;
-  height: 5%;
 }

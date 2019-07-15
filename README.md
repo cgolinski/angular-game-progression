@@ -4,8 +4,8 @@
 
 ### TO DO
 
-- Install any remaining ng add package installations
-- Implement the layout
+- Install any remaining npm packages
+- Continue implementing the layout requirements
 
 ### Docs
 
