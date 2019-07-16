@@ -9,10 +9,12 @@ import { reducers, metaReducers } from '../../store/index.reducer';
 import { AppEffects } from './app.effects';
 import { AppHeaderComponent } from '../app-header/app-header.component';
 import { AppFooterComponent } from '../app-footer/app-footer.component';
+import { DashboardComponent } from 'src/app/modules/dashboard/dashboard.component';
+import { GamesComponent } from 'src/app/modules/games/games.component';
 
 const appRoutes: Routes = [
-  { path: 'dashboard', component: AppHeaderComponent }, // dashboardComponent
-  { path: 'games', component: AppFooterComponent }, // gamesComponent
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'games', component: GamesComponent },
   // { path: 'crisis-center', component: CrisisListComponent },
   // { path: 'hero/:id',      component: HeroDetailComponent },
   // {
@@ -21,11 +23,17 @@ const appRoutes: Routes = [
   //   data: { title: 'Heroes List' }
   // },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: '**', component: AppHeaderComponent }, // dashboardComponent
+  { path: '**', component: DashboardComponent },
 ];
 
 @NgModule({
-  declarations: [AppComponent, AppHeaderComponent, AppFooterComponent],
+  declarations: [
+    AppComponent,
+    AppHeaderComponent,
+    AppFooterComponent,
+    DashboardComponent,
+    GamesComponent,
+  ],
   imports: [
     RouterModule.forRoot(
       appRoutes
@@ -38,14 +46,4 @@ const appRoutes: Routes = [
   providers: [],
   bootstrap: [AppComponent],
 })
-
-// @NgModule({
-//   imports: [
-//     BrowserModule,
-//     StoreModule.forRoot(reducers, { metaReducers }),
-//     EffectsModule.forRoot([AppEffects]),
-//   ],
-//   providers: [],
-//   bootstrap: [AppComponent],
-// })
 export class AppModule {}
