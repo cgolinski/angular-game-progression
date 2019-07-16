@@ -1,0 +1,7 @@
+{
+  "favorites.resources": [
+    "src/app/components/app-header/app-header.component.html",
+    "src/app/components/app-header/app-header.component.ts"
+  ],
+  "favorites.sortOrder": "DESC"
+}

@@ -14,10 +14,12 @@
   </div>
   <nav class="nav-bar">
     <ul class="nav-bar-list">
-      <li class="menu-item">
-        Dashboard
+      <li class="menu-item" routerLinkActive="active">
+        <a class="menu-item-link" [routerLink]="['/dashboard']">Dashboard</a>
       </li>
-      <li class="menu-item">Games</li>
+      <li class="menu-item" routerLinkActive="active">
+        <a class="menu-item-link" [routerLink]="['/games']">Games</a>
+      </li>
     </ul>
   </nav>
 </header>

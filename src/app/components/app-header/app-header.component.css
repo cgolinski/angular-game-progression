@@ -39,8 +39,6 @@
 
 .nav-bar {
   background-color: grey;
-  display: flex;
-  justify-content: flex-start;
   height: 50px;
   list-style: none;
 }
@@ -48,6 +46,7 @@
 .nav-bar-list {
   list-style: none;
   padding: 0;
+  display: flex;
 }
 
 .menu-item:first-child {
@@ -55,15 +54,24 @@
 }
 
 .menu-item {
-  padding: 13px 20px;
-  color: white;
+  height: 100%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  align-self: center;
   font-weight: 400;
-  display: inline-block;
+  display: flex;
 }
 
-.menu-item:hover {
+.menu-item:hover,
+.menu-item.active {
   background-color: darkgrey;
+}
+
+.menu-item-link,
+.menu-item-link:visited {
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  padding: 13px 20px;
+  display: inline-block;
+  color: white;
 }
