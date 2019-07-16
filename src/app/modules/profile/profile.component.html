@@ -1,1 +1,7 @@
 <div>I am the Profile Component</div>
+<div *ngFor="let profile2 of profile | async">
+  <!-- <div> -->
+  <span style="display: block">First name: {{ profile2.firstName }} </span>
+  <span style="display: block">Last name: {{ profile2.lastName }} </span>
+  <span style="display: block">Avatar: {{ profile2.image }} </span>
+</div>

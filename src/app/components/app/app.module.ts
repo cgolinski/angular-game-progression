@@ -3,10 +3,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { reducers, metaReducers } from '../../store/index.reducer';
 import { AppEffects } from './app.effects';
+import { reducers, metaReducers } from '../../store/index.reducer';
 import { AppHeaderComponent } from '../app-header/app-header.component';
 import { AppFooterComponent } from '../app-footer/app-footer.component';
 import { DashboardComponent } from 'src/app/modules/dashboard/dashboard.component';
@@ -17,7 +18,6 @@ const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'games', component: GamesComponent },
   { path: 'profile', component: ProfileComponent },
-  // { path: 'crisis-center', component: CrisisListComponent },
   // { path: 'hero/:id',      component: HeroDetailComponent },
   // {
   //   path: 'heroes',
@@ -43,6 +43,7 @@ const appRoutes: Routes = [
       // { enableTracing: true } // <-- debugging purposes only
     ),
     BrowserModule,
+    HttpClientModule,
     StoreModule.forRoot(reducers, { metaReducers }),
     EffectsModule.forRoot([AppEffects]),
   ],
