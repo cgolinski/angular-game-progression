@@ -1,8 +1,7 @@
-/* :host {
-  background-color: lightblue;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  justify-content: space-between;
-} */
+:host {
+  color: black;
+  font-weight: 700;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}

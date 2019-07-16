@@ -11,10 +11,12 @@ import { AppHeaderComponent } from '../app-header/app-header.component';
 import { AppFooterComponent } from '../app-footer/app-footer.component';
 import { DashboardComponent } from 'src/app/modules/dashboard/dashboard.component';
 import { GamesComponent } from 'src/app/modules/games/games.component';
+import { ProfileComponent } from 'src/app/modules/profile/profile.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'games', component: GamesComponent },
+  { path: 'profile', component: ProfileComponent },
   // { path: 'crisis-center', component: CrisisListComponent },
   // { path: 'hero/:id',      component: HeroDetailComponent },
   // {
@@ -33,6 +35,7 @@ const appRoutes: Routes = [
     AppFooterComponent,
     DashboardComponent,
     GamesComponent,
+    ProfileComponent,
   ],
   imports: [
     RouterModule.forRoot(
