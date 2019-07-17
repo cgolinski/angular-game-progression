@@ -33,16 +33,14 @@
       "code": "fr"
     }
   ],
-  "profile": [
-    {
-      "id": 1,
-      "firstName": "Garfield",
-      "lastName": "Cat",
-      "image": "profile-image.jpg",
-      "languageId": 1,
-      "averageNumberOfHoursPerDay": 2
-    }
-  ],
+  "profile": {
+    "id": 1,
+    "firstName": "Garfield",
+    "lastName": "Cat",
+    "image": "profile-image.jpg",
+    "languageId": 1,
+    "averageNumberOfHoursPerDay": 2
+  },
   "games": [
     {
       "id": 1,
