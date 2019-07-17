@@ -9,13 +9,13 @@ import { ProfileService } from './profile.service';
   styleUrls: ['./profile.component.css'],
 })
 export class ProfileComponent implements OnInit {
-  profile;
+  profile$;
 
   constructor(
     private route: ActivatedRoute,
     private profileService: ProfileService
   ) {
-    this.profile = this.profileService.getDbProfile();
+    this.profile$ = this.profileService.getDbProfile();
   }
   ngOnInit() {}
 }
