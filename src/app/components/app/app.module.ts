@@ -13,11 +13,13 @@ import { AppFooterComponent } from '../app-footer/app-footer.component';
 import { DashboardComponent } from 'src/app/modules/dashboard/dashboard.component';
 import { GamesComponent } from 'src/app/modules/games/games.component';
 import { ProfileComponent } from 'src/app/modules/profile/profile.component';
+import { EditProfileComponent } from 'src/app/modules/profile/edit-profile/edit-profile.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'games', component: GamesComponent },
-  { path: 'profile', component: ProfileComponent },
+  { path: 'my-profile', component: ProfileComponent },
+  { path: 'my-profile/edit', component: EditProfileComponent },
   // { path: 'hero/:id',      component: HeroDetailComponent },
   // {
   //   path: 'heroes',
@@ -36,6 +38,7 @@ const appRoutes: Routes = [
     DashboardComponent,
     GamesComponent,
     ProfileComponent,
+    EditProfileComponent,
   ],
   imports: [
     RouterModule.forRoot(

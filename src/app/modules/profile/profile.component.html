@@ -1,6 +1,54 @@
-<div>I am the Profile Component</div>
-<div *ngIf="profile$ | async as profile">
-  <span style="display: block">First name: {{ profile.firstName }} </span>
-  <span style="display: block">Last name: {{ profile.lastName }} </span>
-  <span style="display: block">Avatar: {{ profile.image }} </span>
+<div
+  style="display: flex; 
+  background-color: darkblue; 
+  border-radius: 6px; 
+  justify-content: space-between; 
+  color: white;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  "
+>
+  <span>My Profile</span>
+  <button
+    type="button"
+    style="background-color: lightblue; border-radius: 6%; padding: 6px 40px; color: darkblue;"
+    [routerLink]="['/my-profile/edit']"
+  >
+    EDIT
+  </button>
+</div>
+<div
+  *ngIf="profile$ | async as profile"
+  style="display: flex; 
+    margin-top: 20px;
+    background-color: darkblue; 
+    border-radius: 6px; 
+    color: white;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    flex-direction: column;
+  "
+  classNames="b1 h3 bgr p2"
+>
+  <span
+    style="display: flex; flex-direction: column; text-align: left; padding-bottom: 15px;"
+    ><span style="font-weight: 700; padding-right: 5px;">Name: </span>
+    {{ profile.firstName }} {{ profile.lastName }}</span
+  >
+  <span
+    style="display: flex; flex-direction: column; text-align: left; padding-bottom: 15px;"
+    ><span style="font-weight: 700; padding-right: 5px;"
+      >Avatar Image URL:
+    </span>
+    {{ profile.image }}
+  </span>
+  <span
+    style="display: flex; flex-direction: column; text-align: left; padding-bottom: 15px;"
+    ><span style="font-weight: 700; padding-right: 5px;"
+      >Average Number of Hours to Game Per Day:
+    </span>
+    {{ profile.averageNumberOfHoursPerDay }}
+  </span>
 </div>
