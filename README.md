@@ -4,8 +4,14 @@
 
 ### TO DO
 
-- Install any remaining npm packages
-- Continue implementing the layout requirements
+- ~~App Layout~~
+- ~~View Profile~~
+- Edit Profile (continue here)
+- Dashboard
+- Games Listing
+- Edit Game
+- Add Game
+- Games Listing Filters
 
 ### Docs
 
